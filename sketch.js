@@ -218,10 +218,10 @@ async function gettime(){
     console.log(d)
 
     if (d>10&&d<20){
-       bg='day.jpg'
+       bg='night.jfif'
     }
     else{
-        bg='night.jfif'
+        bg='day.jpg'
     }
 
     backgroundImg=loadImage(bg)
