@@ -208,7 +208,7 @@ function keyPressed(){
 
 async function gettime(){
 
-    var a = await fetch("http://worldclockapi.com/api/json/est/now")
+    var a = await fetch("https://worldclockapi.com/api/json/est/now")
 
     var b = await a.json()
 
