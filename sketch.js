@@ -208,14 +208,12 @@ function keyPressed(){
 
 async function gettime(){
 
-    var a = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata")
+    var a = await fetch("http://worldclockapi.com/api/json/est/now")
 
     var b = await a.json()
 
-     var c = b.datetime
+     var c = b.currentDateTime
      var d = c.slice(11,13)
-
-    console.log(d)
 
     if (d>10&&d<20){
        bg='night.jfif'
